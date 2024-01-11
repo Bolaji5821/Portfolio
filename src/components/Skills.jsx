@@ -20,10 +20,13 @@ const Skills = () => {
                         <p className='my-4'>JAVASCRIPT</p>
                     </div>
                     <div className='shadow-md shadow-[#68c7ff] hover:scale-110 duration-500'>
+                        <p className='my-4'>Java</p>
+                    </div>
+                    <div className='shadow-md shadow-[#7aff68] hover:scale-110 duration-500'>
                         <p className='my-4'>REACT</p>
                     </div>
                     <div className='shadow-md shadow-[#ff4c4c] hover:scale-110 duration-500'>
-                        <p className='my-4'>GITHUB</p>
+                        <p className='my-4'>GIT</p>
                     </div>
                     <div className='shadow-md shadow-[#6575ff] hover:scale-110 duration-500'>
                         <p className='my-4'>NODE JS</p>
@@ -32,7 +35,7 @@ const Skills = () => {
                         <p className='my-4'>MONGO DB</p>
                     </div>
                     <div className='shadow-md shadow-[#68c7ff] hover:scale-110 duration-500'>
-                        <p className='my-4'>My SQL</p>
+                        <p className='my-4'>MySQL</p>
                     </div>
                     <div className='shadow-md shadow-[#ff4c4c] hover:scale-110 duration-500'>
                         <p className='my-4'>Flask</p>
@@ -45,6 +48,21 @@ const Skills = () => {
                     </div>
                     <div className='shadow-md shadow-[#68c7ff] hover:scale-110 duration-500'>
                         <p className='my-4'>Redis</p>
+                    </div>
+                    <div className='shadow-md shadow-[#ff4c4c] hover:scale-110 duration-500'>
+                        <p className='my-4'>Sequelize</p>
+                    </div>
+                    <div className='shadow-md shadow-[#6575ff] hover:scale-110 duration-500'>
+                        <p className='my-4'>DevOps</p>
+                    </div>
+                    <div className='shadow-md shadow-[#f3ff52] hover:scale-110 duration-500'>
+                        <p className='my-4'>React Native</p>
+                    </div>
+                    <div className='shadow-md shadow-[#ffcf82] hover:scale-110 duration-500'>
+                        <p className='my-4'>AWS Cloud Services</p>
+                    </div>
+                    <div className='shadow-md shadow-[#68c7ff] hover:scale-110 duration-500'>
+                        <p className='my-4'>TypeScript</p>
                     </div>
                 </div>
             </div>

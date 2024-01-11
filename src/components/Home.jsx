@@ -12,16 +12,16 @@ const Home = () => {
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
                 <div className="flex flex-col justify-center h-full">
                     <h1 className="text-2xl sm:text-2xl font-bold text-white">
-                        Hi👋🏽 Welcome to my Portfolio
+                        Hi👋🏽 Welcome to my Portfolio Website
                     </h1>
                     <h2 className="text-4xl sm:text-7xl font-bold text-white">
 
                         I'm a Full Stack Software Engineer
                     </h2>
                     <p className="text-gray-300 py-4 max-w-md">
-                        I have 5 years of experience in graphics design and 2 years experience in web development.
-                        Currently, I love to work on web application using technologies like Flask, Node.js,
-                        React, Tailwind and Mongodb.
+                        With 2 years experience in software development and 5 years in graphic design, my expertise blends creativity and technical prowess.
+                        Proficient in JavaScript, Python, and Java, I specialize in crafting software applications. My project portfolio encompasses technologies
+                        such as Node.js, React, React Native, Python Flask, HTML, CSS, Tailwind, MySQL, MongoDB, and AWS Cloud services.
                     </p>
                     <div>
                         <Link

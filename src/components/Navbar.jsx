@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from 'react';
 import {
     FaBars,
     FaTimes,
@@ -9,11 +9,15 @@ import {
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { Link } from 'react-scroll';
-import { useState } from "react";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
+
+    const openResume = () => {
+        window.open('./Resume.pdf', '_blank');
+        setNav(false);
+    };
 
     return (
         <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0c0c0c] text-gray-300">
@@ -25,6 +29,9 @@ const Navbar = () => {
                     <Link to='home' smooth={true} duration={500}>
                         Home
                     </Link>
+                </li>
+                <li onClick={openResume} style={{ cursor: 'pointer' }}>
+                    Resume
                 </li>
                 <li>
                     <Link to='about' smooth={true} duration={500}>
@@ -46,6 +53,8 @@ const Navbar = () => {
                         Contact
                     </Link>
                 </li>
+
+
             </ul>
             {/* Hamburger */}
             <div onClick={handleClick} className='md:hidden z-10'>
@@ -64,30 +73,31 @@ const Navbar = () => {
                         Home
                     </Link>
                 </li>
+                <li onClick={openResume} style={{ cursor: 'pointer' }}>
+                    Resume
+                </li>
                 <li className='py-6 text-4xl'>
-                    {' '}
                     <Link onClick={handleClick} to='about' smooth={true} duration={500}>
                         About
                     </Link>
                 </li>
                 <li className='py-6 text-4xl'>
-                    {' '}
                     <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
                         Skills
                     </Link>
                 </li>
                 <li className='py-6 text-4xl'>
-                    {' '}
                     <Link onClick={handleClick} to='work' smooth={true} duration={500}>
                         Work
                     </Link>
                 </li>
                 <li className='py-6 text-4xl'>
-                    {' '}
                     <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
                         Contact
                     </Link>
                 </li>
+
+
             </ul>
             {/* Social icons */}
             <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
@@ -97,7 +107,7 @@ const Navbar = () => {
                             className='flex justify-between items-center w-full text-gray-300'
                             href='https://www.linkedin.com/in/bolaji-oyedele-6a1795227/'
                         >
-                            Linkedin <FaLinkedin size={30} />
+                            LinkedIn <FaLinkedin size={30} />
                         </a>
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
@@ -118,8 +128,8 @@ const Navbar = () => {
                     </li>
                     <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                         <a
-                            className='flex justify-between items-center w-full text-gray-300'
-                            href='/'
+                            className='flex justify-between items-center w-full text-gray-300 cursor-pointer'
+                            onClick={openResume}
                         >
                             Resume <BsFillPersonLinesFill size={30} />
                         </a>
@@ -132,7 +142,6 @@ const Navbar = () => {
                             Twitter <FaTwitter size={30} />
                         </a>
                     </li>
-
                 </ul>
             </div>
         </div>
